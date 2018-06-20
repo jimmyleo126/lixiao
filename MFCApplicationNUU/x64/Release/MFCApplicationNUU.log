@@ -1,0 +1,107 @@
+﻿  apiutil.cpp
+apiutil.cpp(15): error C2664: “HINTERNET InternetOpenW(LPCWSTR,DWORD,LPCWSTR,LPCWSTR,DWORD)”: 无法将参数 1 从“const char *”转换为“LPCWSTR”
+  apiutil.cpp(15): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+apiutil.cpp(19): error C2664: “HINTERNET InternetOpenUrlW(HINTERNET,LPCWSTR,LPCWSTR,DWORD,DWORD,DWORD_PTR)”: 无法将参数 2 从“const char *”转换为“LPCWSTR”
+  apiutil.cpp(19): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+apiutil.cpp(50): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  BaseLogger.cpp
+  HttpClient.cpp
+HttpClient.cpp(69): error C2664: “BOOL CHttpFile::AddRequestHeaders(CString &,DWORD)”: 无法将参数 1 从“const char [14]”转换为“LPCTSTR”
+  HttpClient.cpp(69): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+HttpClient.cpp(70): error C2664: “BOOL CHttpFile::AddRequestHeaders(CString &,DWORD)”: 无法将参数 1 从“const char [23]”转换为“LPCTSTR”
+  HttpClient.cpp(70): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+HttpClient.cpp(71): error C2664: “BOOL CHttpFile::AddRequestHeaders(CString &,DWORD)”: 无法将参数 1 从“const char [48]”转换为“LPCTSTR”
+  HttpClient.cpp(71): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+HttpClient.cpp(72): error C2664: “BOOL CHttpFile::AddRequestHeaders(CString &,DWORD)”: 无法将参数 1 从“const char [32]”转换为“LPCTSTR”
+  HttpClient.cpp(72): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+HttpClient.cpp(74): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+HttpClient.cpp(94): error C2679: 二进制“=”: 没有找到接受“CString”类型的右操作数的运算符(或没有可接受的转换)
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\xstring(2254): note: 可能是“std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const _Elem)”
+          with
+          [
+              _Elem=char
+          ]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\xstring(2249): note: 或    “std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const _Elem *const )”
+          with
+          [
+              _Elem=char
+          ]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\xstring(2221): note: 或    “std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)”
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\xstring(2184): note: 或    “std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(std::initializer_list<_Elem>)”
+          with
+          [
+              _Elem=char
+          ]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\xstring(2072): note: 或    “std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&) noexcept(<expr>)”
+  HttpClient.cpp(94): note: 尝试匹配参数列表“(std::string, CString)”时
+HttpClient.cpp(122): error C2664: “int CHttpClient::ExecuteRequest(LPCTSTR,LPCTSTR,LPCTSTR,std::string &)”: 无法将参数 1 从“const char [4]”转换为“LPCTSTR”
+  HttpClient.cpp(122): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+HttpClient.cpp(127): error C2664: “int CHttpClient::ExecuteRequest(LPCTSTR,LPCTSTR,LPCTSTR,std::string &)”: 无法将参数 1 从“const char [5]”转换为“LPCTSTR”
+  HttpClient.cpp(127): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  library.cpp
+c:\users\administrator\desktop\mfcapplicationnuu(1)\mfcapplicationnuu\mfcapplicationnuu\LogManager.h(49): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wingdi.h(118): note: 参见“ERROR”的前一个定义
+library.cpp(59): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+library.cpp(117): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+library.cpp(153): warning C4244: “初始化”: 从“time_t”转换到“long”，可能丢失数据
+library.cpp(192): error C2664: “int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)”: 无法将参数 2 从“const char *”转换为“LPCWSTR”
+  library.cpp(192): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  LogManager.cpp
+c:\users\administrator\desktop\mfcapplicationnuu(1)\mfcapplicationnuu\mfcapplicationnuu\LogManager.h(49): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wingdi.h(118): note: 参见“ERROR”的前一个定义
+  MFCApplicationNUUDlg.cpp
+MFCApplicationNUUDlg.cpp(129): error C2664: “BOOL PathFileExistsW(LPCWSTR)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+  MFCApplicationNUUDlg.cpp(129): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+MFCApplicationNUUDlg.cpp(144): error C2664: “int CWnd::MessageBoxW(LPCTSTR,LPCTSTR,UINT)”: 无法将参数 1 从“const char [10]”转换为“LPCTSTR”
+  MFCApplicationNUUDlg.cpp(144): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+MFCApplicationNUUDlg.cpp(163): error C2440: “初始化”: 无法从“const char *”转换为“ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>”
+  MFCApplicationNUUDlg.cpp(163): note: class“ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>”的构造函数声明为“explicit”
+MFCApplicationNUUDlg.cpp(396): error C2664: “BOOL WritePrivateProfileStringW(LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR)”: 无法将参数 1 从“const char [8]”转换为“LPCWSTR”
+  MFCApplicationNUUDlg.cpp(396): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+MFCApplicationNUUDlg.cpp(402): error C2664: “BOOL WritePrivateProfileStringW(LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR)”: 无法将参数 1 从“const char [8]”转换为“LPCWSTR”
+  MFCApplicationNUUDlg.cpp(402): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  nuu_mainbus.cpp
+c:\users\administrator\desktop\mfcapplicationnuu(1)\mfcapplicationnuu\mfcapplicationnuu\LogManager.h(49): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wingdi.h(118): note: 参见“ERROR”的前一个定义
+nuu_mainbus.cpp(23): error C2664: “int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)”: 无法将参数 2 从“const char [21]”转换为“LPCWSTR”
+  nuu_mainbus.cpp(23): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+nuu_mainbus.cpp(75): error C2664: “int CHttpClient::HttpGet(LPCTSTR,LPCTSTR,std::string &)”: 无法将参数 1 从“const char *”转换为“LPCTSTR”
+  nuu_mainbus.cpp(75): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+nuu_mainbus.cpp(78): warning C4267: “=”: 从“size_t”转换到“long”，可能丢失数据
+nuu_mainbus.cpp(94): error C2664: “int CHttpClient::HttpGet(LPCTSTR,LPCTSTR,std::string &)”: 无法将参数 1 从“const char *”转换为“LPCTSTR”
+  nuu_mainbus.cpp(94): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+nuu_mainbus.cpp(130): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+nuu_mainbus.cpp(144): warning C4305: “=”: 从“double”到“float”截断
+  ReadingBooksDlg.cpp
+  TipBooksDlg.cpp
+TipBooksDlg.cpp(52): error C2678: 二进制“+”: 没有找到接受“const char [7]”类型的左操作数的运算符(或没有可接受的转换)
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\comutil.h(454): note: 可能是“_bstr_t operator +(const wchar_t *,const _bstr_t &)”
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\comutil.h(444): note: 或    “_bstr_t operator +(const char *,const _bstr_t &)”
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(643): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const ATL::CSimpleStringT<wchar_t,true> &,const ATL::CSimpleStringT<wchar_t,true> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(654): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const ATL::CSimpleStringT<wchar_t,true> &,const wchar_t *)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(665): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const wchar_t *,const ATL::CSimpleStringT<wchar_t,true> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2380): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2391): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,const wchar_t *)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2402): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::operator +(const wchar_t *,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2419): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,char)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2431): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(char,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2444): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,wchar_t)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2456): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(wchar_t,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  TipBooksDlg.cpp(52): note: 尝试匹配参数列表“(const char [7], CString)”时
+  TipFeeAndBookDlg.cpp
+TipFeeAndBookDlg.cpp(55): error C2664: “void ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::Format(UINT,...)”: 无法将参数 1 从“const char [14]”转换为“const wchar_t *”
+  TipFeeAndBookDlg.cpp(55): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+TipFeeAndBookDlg.cpp(56): error C2678: 二进制“+”: 没有找到接受“const char [7]”类型的左操作数的运算符(或没有可接受的转换)
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\comutil.h(454): note: 可能是“_bstr_t operator +(const wchar_t *,const _bstr_t &)”
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\include\comutil.h(444): note: 或    “_bstr_t operator +(const char *,const _bstr_t &)”
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(643): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const ATL::CSimpleStringT<wchar_t,true> &,const ATL::CSimpleStringT<wchar_t,true> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(654): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const ATL::CSimpleStringT<wchar_t,true> &,const wchar_t *)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\atlsimpstr.h(665): note: 或    “ATL::CSimpleStringT<wchar_t,true> ATL::CSimpleStringT<wchar_t,true>::operator +(const wchar_t *,const ATL::CSimpleStringT<wchar_t,true> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2380): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2391): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,const wchar_t *)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2402): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::operator +(const wchar_t *,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2419): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,char)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2431): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(char,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2444): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &,wchar_t)”[使用参数相关的查找找到]
+  D:\Visual Studio2017\VC\Tools\MSVC\14.10.25017\atlmfc\include\cstringt.h(2456): note: 或    “ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::operator +(wchar_t,const ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>> &)”[使用参数相关的查找找到]
+  TipFeeAndBookDlg.cpp(56): note: 尝试匹配参数列表“(const char [7], CString)”时
