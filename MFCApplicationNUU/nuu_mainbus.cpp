@@ -18,6 +18,7 @@ HANDLE hThread;
 int model = 0;
 //TimeFlag用来表示是否已经过时，用来跳到主界面的,初始值为FALSE不跳转
 BOOL TimeFlag = FALSE;
+//主界面的定时器，每次进入模块循环的时候，开始递增这个变量
 int TimeCount = 0;
 void Initnuu() {
 	//加载初始化Chang.dll
@@ -93,6 +94,12 @@ void LogOutSchool(string xh)
 	//调用http接口，1表示注销，0表示查看是否注销
 	httpClient.HttpGet(setLogOutUrl("1", xh).c_str(), "", result);
 
+	//检查result到底是什么
+	char debugresult[512];
+	std::memset(debugresult, 0, sizeof(debugresult));
+	sprintf_s(debugresult, sizeof(debugresult), "学号：%s, DEBUG------- 结果原因：%s", xh.c_str(), result.c_str());
+	INFO(debugresult);
+
 	long resultcount = 0;
 	resultcount = result.length();
 	CTipDlg dlg;
@@ -102,15 +109,21 @@ void LogOutSchool(string xh)
 	}
 	else
 	{
-		string kj = result.substr(3, 1);
+		string tag = result.substr(3, 1);
 		string msg = "";
-		if (s2l(kj) == 0)
+		if (s2l(tag) == 0)
 		{
 			result = result.substr(4);
 			dlg.t_tipMsg = result.c_str();
 			msg = "失败!";
+			int islogout = result.find("注销");
+			if (islogout >= 0) {
+				msg = "成功!";
+				string re;
+				InsertLogoutRecord(xh, re);
+			}
 		}
-		else if (s2l(kj) == 1)
+		else if (s2l(tag) == 1)
 		{
 			httpClient.HttpGet(setLogOutUrl("1", xh).c_str(), "", result);
 			result = result.substr(4);
@@ -378,8 +391,13 @@ void ThreadFunc(int num) {
 			continue;
 		}
 		Sleep(100);
+
+
+
+
 		if (TimeCount > 100)
 		{
+			//当进入到某个模块中TimeCount开始递增循环个100边，大概花个10秒左右，开始将TimeFlag值改为True
 			TimeFlag = TRUE;
 		}
 		TimeCount++;
@@ -388,6 +406,7 @@ void ThreadFunc(int num) {
 		//delete &uid;
 		if ((query == 0) && (CanRead))
 		{
+			//只要刷卡之后，TimeCount计数器和TimeFlag值置0和FALSE
 			TimeCount = 0;
 			TimeFlag = FALSE;
 			

@@ -30,7 +30,7 @@ void CInputXhDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CInputXhDlg, CDialogEx)
-	ON_WM_TIMER()
+	//ON_WM_TIMER()
 	ON_BN_CLICKED(IDOK, &CInputXhDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
@@ -39,7 +39,7 @@ END_MESSAGE_MAP()
 
 BOOL CInputXhDlg::OnInitDialog()
 {
-	SetTimer(1, 10000, NULL);
+	//SetTimer(1, 10000, NULL);
 	m_Font.CreatePointFont(120, _T("微软雅黑"), NULL);
 	//m_readingbook.SetFont(&m_Font, FALSE);//m_ControlEdit为需要改变字体的edit控件control变量
 	CEdit *m_Edit = (CEdit *)GetDlgItem(IDC_EDIT1); 
@@ -66,10 +66,10 @@ void CInputXhDlg::OnPaint()
 	dc.FillSolidRect(rect, RGB(30, 144, 255));
 }
 
-void CInputXhDlg::OnTimer(UINT nID)
-{
-	CDialogEx::OnCancel();
-}
+//void cinputxhdlg::ontimer(uint nid)
+//{
+//	cdialogex::oncancel();
+//}
 
 void CInputXhDlg::OnBnClickedOk()
 {

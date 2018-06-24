@@ -110,11 +110,11 @@ void InsertLogoutRecord(string certid, string &re)
 		myconnect->Execute(_bstr_t(insertRecord.c_str()), &ra, adCmdText);
 		unsigned long affectrecords = ra.lVal;
 		if (affectrecords == 1) {
-			sprintf_s(msg, 100, "{学号: %lu, 插入数据库tblGraduators成功!}", s2l(certid));
+			sprintf_s(msg, 100, "{学号: %s, 插入数据库tblGraduators成功!}", certid.c_str());
 		}
 		else
 		{
-			sprintf_s(msg, 100, "{学号: %lu, 插入数据库tblGraduators失败!}", s2l(certid));
+			sprintf_s(msg, 100, "{学号: %s, 插入数据库tblGraduators失败!}", certid.c_str());
 		}
 		INFO(msg);
 	}

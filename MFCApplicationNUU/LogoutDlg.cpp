@@ -91,17 +91,18 @@ void CLogoutDlg::OnPaint()
 	}
 }
 
+//监听发送消息，用来捕获ctrl + D按键，打开输入学号输入框
 BOOL CLogoutDlg::PreTranslateMessage(MSG* pMsg)
 {
 	if (pMsg->message == WM_KEYDOWN && pMsg->wParam == VK_ESCAPE)
 		return TRUE;
 	if (pMsg->message == WM_KEYDOWN && pMsg->wParam == VK_RETURN)
 		return TRUE;
-	if (::GetAsyncKeyState(VK_CONTROL) && pMsg->message == WM_KEYDOWN && pMsg->wParam == 'D')//
+	if (::GetAsyncKeyState(VK_CONTROL) && pMsg->message == WM_KEYDOWN && pMsg->wParam == 'D')
 	{
 		CInputXhDlg inputxhDlg;
 		INT_PTR nRes;
-
+		ControlReadThread(0);
 		nRes = inputxhDlg.DoModal();
 		CString xh = inputxhDlg.m_Xh;
 		int a = 0;
@@ -114,7 +115,7 @@ BOOL CLogoutDlg::PreTranslateMessage(MSG* pMsg)
 		{
 			LogOutSchool((LPCSTR)(xh));
 		}
-
+		ControlReadThread(1);
 		return TRUE;
 	}
 	else
@@ -124,6 +125,7 @@ BOOL CLogoutDlg::PreTranslateMessage(MSG* pMsg)
 void CLogoutDlg::OnTimer(UINT nID)
 {
 	extern BOOL TimeFlag;
+	//用来定时的一个变量，
 	extern int TimeCount;
 	if (TimeFlag)
 	{
@@ -164,6 +166,7 @@ void CLogoutDlg::OnFull()
 
 void CLogoutDlg::OnBnClickedCancel()
 {
+	//g_tipfeeandbookflag变量用来判定是否改返回的
 	extern  BOOL g_tipfeeandbookflag;
 	if(!g_tipfeeandbookflag)
 		CDialogEx::OnCancel();

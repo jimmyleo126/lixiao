@@ -1,10 +1,21 @@
 ﻿  nuu_mainbus.cpp
-d:\mfcapplicationnuu\mfcapplicationnuu\logmanager.h(13): warning C4005: “DEBUG”: 宏重定义
+d:\lixiao\mfcapplicationnuu\logmanager.h(13): warning C4005: “DEBUG”: 宏重定义
   d:\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\atlmfc\include\atldef.h(148): note: 参见“DEBUG”的前一个定义
-d:\mfcapplicationnuu\mfcapplicationnuu\logmanager.h(49): warning C4005: “ERROR”: 宏重定义
+d:\lixiao\mfcapplicationnuu\logmanager.h(49): warning C4005: “ERROR”: 宏重定义
   c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\wingdi.h(118): note: 参见“ERROR”的前一个定义
-d:\mfcapplicationnuu\mfcapplicationnuu\nuu_mainbus.cpp(157): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
-d:\mfcapplicationnuu\mfcapplicationnuu\nuu_mainbus.cpp(202): warning C4244: “=”: 从“float”转换到“long”，可能丢失数据
-d:\mfcapplicationnuu\mfcapplicationnuu\nuu_mainbus.cpp(219): warning C4018: “<”: 有符号/无符号不匹配
-  MFCApplicationNUU.vcxproj -> D:\MFCApplicationNUU\Debug\MFCApplicationNUU.exe
-  MFCApplicationNUU.vcxproj -> D:\MFCApplicationNUU\Debug\MFCApplicationNUU.pdb (Partial PDB)
+d:\lixiao\mfcapplicationnuu\nuu_mainbus.cpp(170): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+d:\lixiao\mfcapplicationnuu\nuu_mainbus.cpp(215): warning C4244: “=”: 从“float”转换到“long”，可能丢失数据
+d:\lixiao\mfcapplicationnuu\nuu_mainbus.cpp(232): warning C4018: “<”: 有符号/无符号不匹配
+  DataBase.cpp
+d:\lixiao\mfcapplicationnuu\logmanager.h(13): warning C4005: “DEBUG”: 宏重定义
+  d:\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\atlmfc\include\atldef.h(148): note: 参见“DEBUG”的前一个定义
+d:\lixiao\mfcapplicationnuu\logmanager.h(49): warning C4005: “ERROR”: 宏重定义
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\wingdi.h(118): note: 参见“ERROR”的前一个定义
+d:\lixiao\mfcapplicationnuu\database.cpp(121): warning C4101: “e”: 未引用的局部变量
+d:\lixiao\mfcapplicationnuu\database.cpp(153): warning C4101: “e”: 未引用的局部变量
+d:\lixiao\mfcapplicationnuu\database.cpp(169): warning C4101: “e”: 未引用的局部变量
+d:\lixiao\mfcapplicationnuu\database.cpp(182): warning C4101: “e”: 未引用的局部变量
+  正在生成代码...
+d:\lixiao\mfcapplicationnuu\database.cpp(263): warning C4715: “ServiceTime”: 不是所有的控件路径都返回值
+  MFCApplicationNUU.vcxproj -> D:\lixiao\Debug\MFCApplicationNUU.exe
+  MFCApplicationNUU.vcxproj -> D:\lixiao\Debug\MFCApplicationNUU.pdb (Partial PDB)

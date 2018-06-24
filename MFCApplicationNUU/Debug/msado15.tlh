@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 14.10.25019.0 (ff250692).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.10.25019.0 (2adff853).
 //
-// d:\mfcapplicationnuu\mfcapplicationnuu\debug\msado15.tlh
+// d:\lixiao\mfcapplicationnuu\debug\msado15.tlh
 //
 // C++ source equivalent of type library msado15.dll
-// compiler-generated file created 03/27/18 at 15:29:20 - DO NOT EDIT!
+// compiler-generated file created 06/21/18 at 10:54:12 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -5022,6 +5022,6 @@ _Record_Deprecated : _ADO
 // Wrapper method implementations
 //
 
-#include "d:\mfcapplicationnuu\mfcapplicationnuu\debug\msado15.tli"
+#include "d:\lixiao\mfcapplicationnuu\debug\msado15.tli"
 
 #pragma pack(pop)
